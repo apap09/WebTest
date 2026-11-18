@@ -1,9 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
+  output: "export",
+  basePath: "/WebTest",
+  assetPrefix: "/WebTest",
+  trailingSlash: true,
   turbopack: {
     rules: {
       "*.css": {
